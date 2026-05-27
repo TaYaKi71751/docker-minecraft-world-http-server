@@ -1,0 +1,14 @@
+{
+  "name": "minecraft-world-zip-downloader",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @minecraft-world-downloader/backend dev\" \"pnpm --filter @minecraft-world-downloader/frontend dev\"",
+    "build": "pnpm --filter @minecraft-world-downloader/backend build && pnpm --filter @minecraft-world-downloader/frontend build",
+    "start": "pnpm --filter @minecraft-world-downloader/backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "typescript": "^5.7.3"
+  }
+}
