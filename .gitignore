@@ -3,6 +3,7 @@ dist/
 .npm*
 .next/
 pnpm-debug.log*
+.pnpm-store/
 world/
 docker-compose.yaml
 docker-compose.yml
