@@ -85,7 +85,7 @@ function streamFile(file: string, res: NodeJS.WritableStream) {
 }
 
 function downloadName() {
-  const name = process.env.DOWNLOAD_NAME || 'minecraft-world.zip';
+  const name = process.env.DOWNLOAD_NAME || `minecraft-world-${Date.now()}.zip`;
   const cleaned = path
     .basename(name)
     .replace(/[^a-zA-Z0-9._-]/g, '-')

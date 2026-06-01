@@ -14,7 +14,6 @@ services:
     network_mode: host
     environment:
       WORLD_DIR: /world
-      DOWNLOAD_NAME: minecraft-world.zip
     volumes:
       - ./world:/world:ro
     restart: unless-stopped
@@ -39,13 +38,13 @@ Open:
 http://localhost:3000
 ```
 
-Click **Download world zip** to receive `minecraft-world.zip`.
+Click **Download world zip** to receive `minecraft-world-<unix-seconds>.zip`.
 
 ## Configuration
 
 The Compose file mounts `./world` into the container at `/world`.
 
-You can change the downloaded filename with:
+By default, each downloaded filename includes the current Unix timestamp. You can override it with:
 
 ```yaml
 environment:

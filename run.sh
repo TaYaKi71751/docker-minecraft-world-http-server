@@ -23,6 +23,5 @@ ${CONTAINER_RUNTIME} run -d \
   --name minecraft-world-downloader \
   --network host \
   -e WORLD_DIR=/world \
-  -e DOWNLOAD_NAME=minecraft-world.zip \
   -v "$(pwd)/world:/world:ro" \
   minecraft-world-downloader

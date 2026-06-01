@@ -42,7 +42,6 @@ ENV FRONTEND_DIST=/app/public
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV WORLD_DIR=/world
-ENV DOWNLOAD_NAME=minecraft-world.zip
 
 EXPOSE 3000
 
