@@ -38,7 +38,7 @@ Open:
 http://localhost:3000
 ```
 
-Click **Download world zip** to receive `minecraft-world-<unix-seconds>.zip`.
+Click **Download world zip** to receive `minecraft-world-<unix-milliseconds>.zip`.
 
 ## Configuration
 
